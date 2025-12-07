@@ -10,10 +10,11 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DDG00000N95TS" method="POST">
+<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DD4000000A16D" method="POST">
 
-    <input type=hidden name="oid" value="00DDG00000N95TS">
-    <input type=hidden name="retURL" value="https://firstfruitsfarm--prod202512.sandbox.lightning.force.com/">
+    <input type=hidden name="oid" value="00DD4000000A16D">
+    <input type=hidden name="retURL" value="https://firstfruitsfarm--lf120725.sandbox.my.salesforce-setup.com/">
+    <input type="hidden" name="recordType" id="recordType" value="012D4000001EOT3IAO">
 
     <!--  ----------------------------------------------------------------------  -->
     <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -36,7 +37,7 @@
 
     <label for="state">State/Province</label><input id="state" maxlength="20" name="state" size="20" type="text" /><br>
 
-    Classification of Organization:<select id="00NDG000005jNtU" multiple="multiple" name="00NDG000005jNtU"
+    Classification of Organization:<select id="00ND400000A6dyK" multiple="multiple" name="00ND400000A6dyK"
         title="Classification of Organization">
         <option value="Church">Church</option>
         <option value="Community Center">Community Center</option>
@@ -48,7 +49,7 @@
         <option value="Soup Kitchen/ Shelter">Soup Kitchen/ Shelter</option>
     </select><br>
 
-    Vicinities Served:<select id="00NDG000005jNtZ" multiple="multiple" name="00NDG000005jNtZ" title="Vicinities Served">
+    Vicinities Served:<select id="00ND400000A6dyP" multiple="multiple" name="00ND400000A6dyP" title="Vicinities Served">
         <option value="Allegany County">Allegany County</option>
         <option value="Anne Arundel County">Anne Arundel County</option>
         <option value="Baltimore City">Baltimore City</option>
@@ -66,6 +67,13 @@
         <option value="Somerset County">Somerset County</option>
         <option value="Talbot County">Talbot County</option>
     </select><br>
+
+    Organization&#39;s Mission:<textarea id="00ND400000A6dyU" name="00ND400000A6dyU" rows="10" type="text"
+        wrap="soft"></textarea><br>
+
+    501(c)(3):<input id="00ND400000A6dyZ" name="00ND400000A6dyZ" type="checkbox" value="1" /><br>
+
+    EIN:<input id="00ND400000A6dye" maxlength="9" name="00ND400000A6dye" size="20" type="text" /><br>
 
     <input type="submit" name="submit">
 

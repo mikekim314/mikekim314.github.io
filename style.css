@@ -99,6 +99,9 @@ p {
 
 .nav-links a:hover {
   color: var(--primary-color);
+  background-color: rgba(46, 125, 50, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
 }
 
 .btn-primary {
@@ -224,6 +227,12 @@ p {
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 0.5rem;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.5rem;
 }
 
 .checkbox-item {
