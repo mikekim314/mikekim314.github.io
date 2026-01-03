@@ -3,6 +3,7 @@
 
 <head>
         <meta charset="UTF-8">
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Food Distribution - First Fruits Farm</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,13 +46,14 @@
                      Replace 'YOUR_OID_HERE' with your actual Salesforce OID
                      Replace 'http://www.google.com' with your actual return URL
                 -->
-                                <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DDG00000N95TS"
+                                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DKY00000PVKQa"
                                         method="POST">
 
-                                        <input type=hidden name="oid" value="00DDG00000N95TS">
+                                        <input type=hidden name="oid" value="00DKY00000PVKQa">
                                         <input type=hidden name="retURL"
-                                                value="https://firstfruitsfarm--prod202512.sandbox.lightning.force.com/">
-                                        <input type="hidden" name="recordType" id="recordType" value="012D4000001EOT3">
+                                                value="https://www.firstfruitsfarm.org/distribution-partner-form">
+                                        <!-- <input type="hidden" name="debug" value=1> -->
+                                        <!-- <input type="hidden" name="debugEmail" value="seungjunone@gmail.com"> -->
 
                                         <div class="form-group">
                                                 <label for="first_name">First Name</label>
@@ -72,9 +74,29 @@
                                         </div>
 
                                         <div class="form-group">
+                                                <label for="phone">Phone</label>
+                                                <input id="phone" maxlength="40" name="phone" size="20" type="text"
+                                                        placeholder="(410) 555-0123" />
+                                        </div>
+
+                                        <div class="form-group">
                                                 <label for="company">Company</label>
                                                 <input id="company" maxlength="40" name="company" size="20" type="text"
                                                         placeholder="Community Food Bank" />
+                                        </div>
+
+                                        <div class="form-group">
+                                                <label for="00NKY00000bqQ8O">EIN</label>
+                                                <input id="00NKY00000bqQ8O" maxlength="9" name="00NKY00000bqQ8O"
+                                                        size="20" type="text" placeholder="12-3456789" />
+                                        </div>
+
+                                        <div class="form-group">
+                                                <label class="checkbox-item">
+                                                        <input id="00NKY00000bqQ8J" name="00NKY00000bqQ8J"
+                                                                type="checkbox" value="1" />
+                                                        501(c)(3) Organization
+                                                </label>
                                         </div>
 
                                         <div class="form-group">
@@ -90,99 +112,312 @@
                                         </div>
 
                                         <div class="form-group">
+                                                <label for="zip">Zip</label>
+                                                <input id="zip" maxlength="20" name="zip" size="20" type="text"
+                                                        placeholder="21201" />
+                                        </div>
+
+                                        <div class="form-group">
+                                                <label for="country">Country</label>
+                                                <input id="country" maxlength="40" name="country" size="20" type="text"
+                                                        placeholder="United States" />
+                                        </div>
+
+                                        <div class="form-group">
+                                                <label for="00NKY00000bqQ6S">Organization's Mission</label>
+                                                <textarea id="00NKY00000bqQ6S" name="00NKY00000bqQ6S" rows="3"
+                                                        placeholder="Briefly describe your mission..."
+                                                        wrap="soft"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                                <label for="00NKY00000bqQ6X">Distribution Date / Cadence</label>
+                                                <textarea id="00NKY00000bqQ6X" name="00NKY00000bqQ6X" rows="3"
+                                                        placeholder="e.g. 2nd Saturday of every month"
+                                                        wrap="soft"></textarea>
+                                        </div>
+
+                                        <div class="form-group tag-select-wrapper">
                                                 <label>Classification of Organization</label>
-                                                <div class="checkbox-group checkbox-grid">
+                                                <div class="tag-select-box"
+                                                        data-placeholder="Select classifications...">
+                                                        <span class="tag-select-placeholder">Select
+                                                                classifications...</span>
+                                                </div>
+                                                <div id="00NKY00000bnyVo" class="checkbox-group checkbox-grid">
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtU" value="Church">
+                                                                        name="00NKY00000bnyVo" value="Church">
                                                                 Church</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtU" value="Community Center">
+                                                                        name="00NKY00000bnyVo" value="Community Center">
                                                                 Community Center</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtU"
+                                                                        name="00NKY00000bnyVo"
                                                                         value="Food Giveaway Event"> Food Giveaway
                                                                 Event</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtU" value="Food Pantry"> Food
+                                                                        name="00NKY00000bnyVo" value="Food Pantry"> Food
                                                                 Pantry</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtU" value="Health Services">
+                                                                        name="00NKY00000bnyVo" value="Health Services">
                                                                 Health Services</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtU" value="Human Services">
+                                                                        name="00NKY00000bnyVo" value="Human Services">
                                                                 Human Services</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtU"
-                                                                        value="School or Children&#39;s Program"> School
-                                                                or Children&#39;s Program</label>
+                                                                        name="00NKY00000bnyVo"
+                                                                        value="School or Children's Program"> School
+                                                                or Children's Program</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtU"
+                                                                        name="00NKY00000bnyVo"
                                                                         value="Soup Kitchen/ Shelter"> Soup Kitchen/
                                                                 Shelter</label>
                                                 </div>
                                         </div>
 
-                                        <div class="form-group">
-                                                <label>Vicinities Served</label>
-                                                <div class="checkbox-group checkbox-grid">
+                                        <div class="form-group tag-select-wrapper">
+                                                <label>States Served</label>
+                                                <div class="tag-select-box" data-placeholder="Select states...">
+                                                        <span class="tag-select-placeholder">Select states...</span>
+                                                </div>
+                                                <div id="00NKY00000bqQ6c" class="checkbox-group checkbox-grid">
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Allegany County">
+                                                                        name="00NKY00000bqQ6c" value="Maryland">
+                                                                Maryland</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ6c" value="Pennsylvania">
+                                                                Pennsylvania</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ6c"
+                                                                        value="District of Columbia"> District of
+                                                                Columbia</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ6c" value="Delaware">
+                                                                Delaware</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ6c" value="Virginia">
+                                                                Virginia</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ6c" value="West Virginia">
+                                                                West Virginia</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ6c" value="Kentucky">
+                                                                Kentucky</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ6c" value="Other">
+                                                                Other</label>
+                                                </div>
+                                        </div>
+
+                                        <div class="form-group tag-select-wrapper">
+                                                <label>Vicinities Served</label>
+                                                <div class="tag-select-box" data-placeholder="Select vicinities...">
+                                                        <span class="tag-select-placeholder">Select vicinities...</span>
+                                                </div>
+                                                <div id="00NKY00000bnyVt" class="checkbox-group checkbox-grid">
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bnyVt" value="Allegany County">
                                                                 Allegany County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ"
+                                                                        name="00NKY00000bnyVt"
                                                                         value="Anne Arundel County"> Anne Arundel
                                                                 County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Baltimore City">
+                                                                        name="00NKY00000bnyVt" value="Baltimore City">
                                                                 Baltimore City</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Baltimore County">
+                                                                        name="00NKY00000bnyVt" value="Baltimore County">
                                                                 Baltimore County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Carroll County">
+                                                                        name="00NKY00000bnyVt" value="Carroll County">
                                                                 Carroll County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ"
+                                                                        name="00NKY00000bnyVt"
                                                                         value="Dorchester County"> Dorchester
                                                                 County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Frederick County">
+                                                                        name="00NKY00000bnyVt" value="Frederick County">
                                                                 Frederick County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Garrett County">
+                                                                        name="00NKY00000bnyVt" value="Garrett County">
                                                                 Garrett County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Harford County">
+                                                                        name="00NKY00000bnyVt" value="Harford County">
                                                                 Harford County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Howard County">
+                                                                        name="00NKY00000bnyVt" value="Howard County">
                                                                 Howard County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Kent County"> Kent
+                                                                        name="00NKY00000bnyVt" value="Kent County"> Kent
                                                                 County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ"
+                                                                        name="00NKY00000bnyVt"
                                                                         value="Montgomery County"> Montgomery
                                                                 County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ"
-                                                                        value="Prince George&#39;s County"> Prince
-                                                                George&#39;s County</label>
+                                                                        name="00NKY00000bnyVt"
+                                                                        value="Prince George's County"> Prince
+                                                                George's County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ"
-                                                                        value="Queen Anne&#39;s County"> Queen
-                                                                Anne&#39;s County</label>
+                                                                        name="00NKY00000bnyVt"
+                                                                        value="Queen Anne's County"> Queen
+                                                                Anne's County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Somerset County">
+                                                                        name="00NKY00000bnyVt" value="Somerset County">
                                                                 Somerset County</label>
                                                         <label class="checkbox-item"><input type="checkbox"
-                                                                        name="00NDG000005jNtZ" value="Talbot County">
+                                                                        name="00NKY00000bnyVt" value="Talbot County">
                                                                 Talbot County</label>
                                                 </div>
                                         </div>
 
+                                        <div class="form-group tag-select-wrapper">
+                                                <label>Service Age Groups</label>
+                                                <div class="tag-select-box" data-placeholder="Select age groups...">
+                                                        <span class="tag-select-placeholder">Select age groups...</span>
+                                                </div>
+                                                <div id="00NKY00000bqQ6h" class="checkbox-group checkbox-grid">
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ6h" value="0-17">
+                                                                0-17</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ6h" value="18-64">
+                                                                18-64</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ6h" value="65 and older"> 65
+                                                                and older</label>
+                                                </div>
+                                        </div>
+
+                                        <div class="form-group tag-select-wrapper">
+                                                <label>Ethnicities Served</label>
+                                                <div class="tag-select-box" data-placeholder="Select ethnicities...">
+                                                        <span class="tag-select-placeholder">Select
+                                                                ethnicities...</span>
+                                                </div>
+                                                <div id="00NKY00000bqQ8T" class="checkbox-group checkbox-grid">
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ8T"
+                                                                        value="American Indian/Alaska Native"> American
+                                                                Indian/Alaska Native</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ8T" value="Asian">
+                                                                Asian</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ8T" value="Black">
+                                                                Black</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ8T" value="Hispanic/Latino">
+                                                                Hispanic/Latino</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ8T"
+                                                                        value="Native Hawaiian/Other Pacific Islander">
+                                                                Native Hawaiian/Other Pacific Islander</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ8T" value="White">
+                                                                White</label>
+                                                        <label class="checkbox-item"><input type="checkbox"
+                                                                        name="00NKY00000bqQ8T" value="Other">
+                                                                Other</label>
+                                                </div>
+                                        </div>
+
+
+                                        <div class="form-group" id="demographics-section">
+                                                <div
+                                                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                                        <label style="margin-bottom: 0;">Estimated Demographics Served
+                                                                (%)</label>
+                                                        <span id="demographic-total" class="total-invalid">Total:
+                                                                0%</span>
+                                                </div>
+                                                <div class="demographic-kv-grid">
+                                                        <div class="demographic-item">
+                                                                <label for="00NKY00000bqQ71">Women</label>
+                                                                <input id="00NKY00000bqQ71" name="00NKY00000bqQ71"
+                                                                        type="number" min="0" max="100"
+                                                                        placeholder="0" />
+                                                        </div>
+                                                        <div class="demographic-item">
+                                                                <label for="00NKY00000bqQ7B">Children</label>
+                                                                <input id="00NKY00000bqQ7B" name="00NKY00000bqQ7B"
+                                                                        type="number" min="0" max="100"
+                                                                        placeholder="0" />
+                                                        </div>
+                                                        <div class="demographic-item">
+                                                                <label for="00NKY00000bqQ7G">Men</label>
+                                                                <input id="00NKY00000bqQ7G" name="00NKY00000bqQ7G"
+                                                                        type="number" min="0" max="100"
+                                                                        placeholder="0" />
+                                                        </div>
+                                                        <div class="demographic-item">
+                                                                <label for="00NKY00000bqQ7L">Veterans</label>
+                                                                <input id="00NKY00000bqQ7L" name="00NKY00000bqQ7L"
+                                                                        type="number" min="0" max="100"
+                                                                        placeholder="0" />
+                                                        </div>
+                                                        <div class="demographic-item">
+                                                                <label for="00NKY00000bqQ7Q">Seniors</label>
+                                                                <input id="00NKY00000bqQ7Q" name="00NKY00000bqQ7Q"
+                                                                        type="number" min="0" max="100"
+                                                                        placeholder="0" />
+                                                        </div>
+                                                        <div class="demographic-item">
+                                                                <label for="00NKY00000bqQ7R">Recovery/SUD</label>
+                                                                <input id="00NKY00000bqQ7R" name="00NKY00000bqQ7R"
+                                                                        type="number" min="0" max="100"
+                                                                        placeholder="0" />
+                                                        </div>
+                                                        <div class="demographic-item">
+                                                                <label for="00NKY00000bqQ7k">Disabilities</label>
+                                                                <input id="00NKY00000bqQ7k" name="00NKY00000bqQ7k"
+                                                                        type="number" min="0" max="100"
+                                                                        placeholder="0" />
+                                                        </div>
+                                                        <div class="demographic-item">
+                                                                <label for="00NKY00000bqQ8Y">Homeless</label>
+                                                                <input id="00NKY00000bqQ8Y" name="00NKY00000bqQ8Y"
+                                                                        type="number" min="0" max="100"
+                                                                        placeholder="0" />
+                                                        </div>
+                                                        <div class="demographic-item">
+                                                                <label for="00NKY00000bqQ8d">Immigrant/Refugee</label>
+                                                                <input id="00NKY00000bqQ8d" name="00NKY00000bqQ8d"
+                                                                        type="number" min="0" max="100"
+                                                                        placeholder="0" />
+                                                        </div>
+                                                </div>
+                                                <div id="demographic-error"
+                                                        style="display: none; color: #dc2626; font-size: 0.85rem; margin-top: 0.5rem; font-weight: 500;">
+                                                        Sum of all percentages must equal exactly 100%.
+                                                </div>
+                                        </div>
+
+                                        <div class="form-group"
+                                                style="margin-top: 2rem; padding: 1.5rem; background: #fdf2f2; border-radius: var(--radius-md); border-left: 4px solid #f87171;">
+                                                <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #991b1b;">
+                                                        Disclaimer & Waiver</h3>
+                                                <p style="font-size: 0.85rem; margin-bottom: 1rem; color: #7f1d1d;">By
+                                                        signing below, you acknowledge that you have reviewed and agree
+                                                        to the terms of the First Fruits Farm distribution partnership
+                                                        disclaimer and waiver.</p>
+
+                                                <div class="form-group">
+                                                        <label for="00NKY00000bqQ8i">Signed By (Name)</label>
+                                                        <input id="00NKY00000bqQ8i" maxlength="255"
+                                                                name="00NKY00000bqQ8i" type="text"
+                                                                placeholder="Your Full Name" />
+                                                </div>
+
+                                                <label class="checkbox-item" style="color: #7f1d1d;">
+                                                        <input id="00NKY00000bqQ8n" name="00NKY00000bqQ8n"
+                                                                type="checkbox" value="1" />
+                                                        I have reviewed and agree to the waiver
+                                                </label>
+                                        </div>
+
                                         <button type="submit" name="submit" class="btn-primary"
-                                                style="width: 100%;">Submit Request</button>
+                                                style="width: 100%; margin-top: 1rem;">Submit Request</button>
 
                                 </form>
                         </div>
