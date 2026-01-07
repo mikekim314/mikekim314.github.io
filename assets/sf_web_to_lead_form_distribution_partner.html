@@ -10,10 +10,10 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DDG00000NAgJq" method="POST">
+<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DDa000001ny4k" method="POST">
 
-    <input type=hidden name="oid" value="00DDG00000NAgJq">
-    <input type=hidden name="retURL" value="https://mikekim314.github.io/distribution-thank-you">
+    <input type=hidden name="oid" value="00DDa000001ny4k">
+    <input type=hidden name="retURL" value="https://mikekim314.github.io/distribution-thank-you.html">
 
     <!--  ----------------------------------------------------------------------  -->
     <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -35,6 +35,19 @@
     <label for="city">City</label><input id="city" maxlength="40" name="city" size="20" type="text" /><br>
 
     <label for="state">State/Province</label><input id="state" maxlength="20" name="state" size="20" type="text" /><br>
+
+    <label for="recordType">Lead Record Type</label><select id="recordType" name="recordType">
+        <option value="">--None--</option>
+        <option value="012KY000000Qf8m">Distribution Partner</option>
+        <option value="012KY000000QjDl">Volunteer Leads</option>
+    </select><br>
+
+    Pick-up Size:<select id="00NKY00000YfskP" name="00NKY00000YfskP" title="Pick-up Size">
+        <option value="">--None--</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Mid</option>
+        <option value="Large">Big</option>
+    </select><br>
 
     Classification of Organization:<select id="00NKY00000bnyVo" multiple="multiple" name="00NKY00000bnyVo"
         title="Classification of Organization">
@@ -67,54 +80,13 @@
         <option value="Talbot County">Talbot County</option>
     </select><br>
 
-    Demogr - Children:<input id="00NDG000005Q7h8" name="00NDG000005Q7h8" size="20" type="text" /><br>
-
-    Demogr - Disabilities:<input id="00NDG000005Q7h9" name="00NDG000005Q7h9" size="20" type="text" /><br>
-
-    Demogr - Homeless Community:<input id="00NDG000005Q7hA" name="00NDG000005Q7hA" size="20" type="text" /><br>
-
-    Demogr - Immigrant/Refugee:<input id="00NDG000005Q7hB" name="00NDG000005Q7hB" size="20" type="text" /><br>
-
-    Demogr - Men:<input id="00NDG000005Q7hC" name="00NDG000005Q7hC" size="20" type="text" /><br>
-
-    Demogr - Recovery/SUD:<input id="00NDG000005Q7hD" name="00NDG000005Q7hD" size="20" type="text" /><br>
-
-    Demogr - Seniors:<input id="00NDG000005Q7hE" name="00NDG000005Q7hE" size="20" type="text" /><br>
-
-    Demogr - Veteran:<input id="00NDG000005Q7hF" name="00NDG000005Q7hF" size="20" type="text" /><br>
-
-    Demogr - Women:<input id="00NDG000005Q7hG" name="00NDG000005Q7hG" size="20" type="text" /><br>
-
-    Disclaimer_Waiver_Reviewed:<input id="00NDG000005Q7hH" name="00NDG000005Q7hH" type="checkbox" value="1" /><br>
-
-    Disclaimer_Waiver_Signed_by:<input id="00NDG000005Q7hI" maxlength="255" name="00NDG000005Q7hI" size="20"
-        type="text" /><br>
-
-    Distribution Date / Cadence:<textarea id="00NDG000005Q7hJ" name="00NDG000005Q7hJ" rows="3" type="text"
+    Organization&#39;s Mission:<textarea id="00NKY00000bqQ6S" name="00NKY00000bqQ6S" rows="3" type="text"
         wrap="soft"></textarea><br>
 
-    Ethnicities Served:<select id="00NDG000005Q7hL" multiple="multiple" name="00NDG000005Q7hL"
-        title="Ethnicities Served">
-        <option value="American Indian/Alaska Native">American Indian/Alaska Native</option>
-        <option value="Asian">Asian</option>
-        <option value="Black">Black</option>
-        <option value="Hispanic/Latino">Hispanic/Latino</option>
-        <option value="Native Hawaiian/Other Pacific Islander">Native Hawaiian/Other Pacific Islander</option>
-        <option value="White">White</option>
-        <option value="Other">Other</option>
-    </select><br>
-
-    Organization&#39;s Mission:<textarea id="00NDG000005Q7hM" name="00NDG000005Q7hM" rows="3" type="text"
+    Distribution Date / Cadence:<textarea id="00NKY00000bqQ6X" name="00NKY00000bqQ6X" rows="3" type="text"
         wrap="soft"></textarea><br>
 
-    Service Age Groups:<select id="00NDG000005Q7hN" multiple="multiple" name="00NDG000005Q7hN"
-        title="Service Age Groups">
-        <option value="0-17">0-17</option>
-        <option value="18-64">18-64</option>
-        <option value="65 and older">65 and older</option>
-    </select><br>
-
-    States Served:<select id="00NDG000005Q7hO" multiple="multiple" name="00NDG000005Q7hO" title="States Served">
+    States Served:<select id="00NKY00000bqQ6c" multiple="multiple" name="00NKY00000bqQ6c" title="States Served">
         <option value="Maryland">Maryland</option>
         <option value="Pennsylvania">Pennsylvania</option>
         <option value="District of Columbia">District of Columbia</option>
@@ -125,9 +97,52 @@
         <option value="Other">Other</option>
     </select><br>
 
-    EIN:<input id="00NDG000005Q7hK" maxlength="9" name="00NDG000005Q7hK" size="20" type="text" /><br>
+    Service Age Groups:<select id="00NKY00000bqQ6h" multiple="multiple" name="00NKY00000bqQ6h"
+        title="Service Age Groups">
+        <option value="0-17">0-17</option>
+        <option value="18-64">18-64</option>
+        <option value="65 and older">65 and older</option>
+    </select><br>
 
-    is_501c3:<input id="00NDG000005Q7hP" name="00NDG000005Q7hP" type="checkbox" value="1" /><br>
+    Demogr - Women:<input id="00NKY00000bqQ71" name="00NKY00000bqQ71" size="20" type="text" /><br>
+
+    Demogr - Children:<input id="00NKY00000bqQ7B" name="00NKY00000bqQ7B" size="20" type="text" /><br>
+
+    Demogr - Men:<input id="00NKY00000bqQ7G" name="00NKY00000bqQ7G" size="20" type="text" /><br>
+
+    Demogr - Veteran:<input id="00NKY00000bqQ7L" name="00NKY00000bqQ7L" size="20" type="text" /><br>
+
+    Demogr - Seniors:<input id="00NKY00000bqQ7Q" name="00NKY00000bqQ7Q" size="20" type="text" /><br>
+
+    Demogr - Recovery/SUD:<input id="00NKY00000bqQ7R" name="00NKY00000bqQ7R" size="20" type="text" /><br>
+
+    Demogr - Disabilities:<input id="00NKY00000bqQ7k" name="00NKY00000bqQ7k" size="20" type="text" /><br>
+
+    is_501c3:<input id="00NKY00000bqQ8J" name="00NKY00000bqQ8J" type="checkbox" value="1" /><br>
+
+    EIN:<input id="00NKY00000bqQ8O" maxlength="9" name="00NKY00000bqQ8O" size="20" type="text" /><br>
+
+    Ethnicities Served:<select id="00NKY00000bqQ8T" multiple="multiple" name="00NKY00000bqQ8T"
+        title="Ethnicities Served">
+        <option value="American Indian/Alaska Native">American Indian/Alaska Native</option>
+        <option value="Asian">Asian</option>
+        <option value="Black">Black</option>
+        <option value="Hispanic/Latino">Hispanic/Latino</option>
+        <option value="Native Hawaiian/Other Pacific Islander">Native Hawaiian/Other Pacific Islander</option>
+        <option value="White">White</option>
+        <option value="Other">Other</option>
+    </select><br>
+
+    Demogr - Homeless Community:<input id="00NKY00000bqQ8Y" name="00NKY00000bqQ8Y" size="20" type="text" /><br>
+
+    Demogr - Immigrant/Refugee:<input id="00NKY00000bqQ8d" name="00NKY00000bqQ8d" size="20" type="text" /><br>
+
+    Disclaimer_Waiver_Signed_by:<input id="00NKY00000bqQ8i" maxlength="255" name="00NKY00000bqQ8i" size="20"
+        type="text" /><br>
+
+    Disclaimer_Waiver_Reviewed:<input id="00NKY00000bqQ8n" name="00NKY00000bqQ8n" type="checkbox" value="1" /><br>
+
+    <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
     <input type="submit" name="submit">
 
